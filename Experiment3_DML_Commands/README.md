@@ -46,124 +46,160 @@ Used to retrieve records from a table.
 SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
---
--- Paste Question 1 here
+
+<img width="579" height="352" alt="image" src="https://github.com/user-attachments/assets/4b63dfbb-dd07-41e4-9aa3-e9ae84212376" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+
+UPDATE products
+SET category ='Household'
+WHERE product_name LIKE '%Detergent%';
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="593" height="352" alt="image" src="https://github.com/user-attachments/assets/c0706f24-4c97-4d89-acbe-dbaaef7d0af9" />
 
 **Question 2**
----
--- Paste Question 2 here
+
+<img width="593" height="329" alt="image" src="https://github.com/user-attachments/assets/f975ef24-d775-4346-a7b2-74e44d158faf" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+UPDATE PRODUCTS
+SET sell_price= sell_price + ( 0.1 *sell_price) 
+WHERE supplier_id =6;
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="595" height="382" alt="image" src="https://github.com/user-attachments/assets/a6711ce8-d5e1-4d4a-8969-18660420b5fb" />
 
 **Question 3**
----
--- Paste Question 3 here
+
+<img width="589" height="305" alt="image" src="https://github.com/user-attachments/assets/9c51558a-ec41-45cd-b86d-1e95f2258ada" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+UPDATE Products
+SET reorder_lvl==20
+WHERE quantity < 10 
+AND category LIKE '%Snacks%' ;
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="590" height="400" alt="image" src="https://github.com/user-attachments/assets/776c0065-53c8-423b-9f64-c2e45999cc82" />
+
 
 **Question 4**
----
--- Paste Question 4 here
+
+<img width="598" height="448" alt="image" src="https://github.com/user-attachments/assets/bcafc40e-4abf-486a-9f44-8169c827d8a2" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+UPDATE Employees
+SET first_name = 'John'
+WHERE department_id =80 
+AND commission_pct <0.35 ;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="587" height="385" alt="image" src="https://github.com/user-attachments/assets/58e0c587-e498-4cc0-8d2f-8df9b302c9e8" />
 
 **Question 5**
----
--- Paste Question 5 here
+
+<img width="583" height="350" alt="image" src="https://github.com/user-attachments/assets/cc19778e-9d5d-4aa3-a521-0c4a1c601b7d" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+
+UPDATE Products
+SET reorder_lvl= reorder_lvl-(0.3*reorder_lvl)
+WHERE cost_price > 50 
+AND quantity < 100 ;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1179" height="655" alt="Screenshot 2026-03-22 153038" src="https://github.com/user-attachments/assets/8a9cefa0-f528-4e93-9750-7ef368812e61" />
+
+
+
+
 
 **Question 6**
----
--- Paste Question 6 here
+
+<img width="1161" height="653" alt="Screenshot 2026-03-22 153101" src="https://github.com/user-attachments/assets/a7391287-e1ec-445d-8e22-e0ab75ebd020" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+DELETE FROM Customer
+WHERE CUST_COUNTRY IN( 'UK') AND WORKING_AREA IN ('London') AND GRADE <3;
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="602" height="358" alt="image" src="https://github.com/user-attachments/assets/860b6558-4463-467f-a31c-ca63090bdf16" />
 
 **Question 7**
----
--- Paste Question 7 here
+
+<img width="1155" height="793" alt="Screenshot 2026-03-22 153421" src="https://github.com/user-attachments/assets/7ea64c3b-14c9-46eb-866f-34cd9998168d" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+DELETE  FROM Surgeries
+WHERE surgery_id = 3 
+OR surgery_id =4;
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="578" height="341" alt="image" src="https://github.com/user-attachments/assets/519ce50a-a397-41c2-9221-10db6fa1c0ae" />
 
 **Question 8**
----
--- Paste Question 8 here
+
+<img width="594" height="419" alt="image" src="https://github.com/user-attachments/assets/ee6dfe2d-8373-4f65-9db9-75bb4dcbf7cb" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+DELETE FROM Customer
+WHERE GRADE =2;
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="590" height="406" alt="image" src="https://github.com/user-attachments/assets/0b966efb-8a3e-42bc-ab75-4be8a5cf5de2" />
+
 
 **Question 9**
----
--- Paste Question 9 here
+
+<img width="593" height="320" alt="image" src="https://github.com/user-attachments/assets/170e1eb8-8e97-4f1d-8edc-72ccb5429165" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+DELETE FROM Customer
+WHERE CUST_COUNTRY NOT IN ('India', 'USA');
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="592" height="378" alt="image" src="https://github.com/user-attachments/assets/8b1fbc70-0e5c-4645-919d-8c6a3c6525a5" />
 
 **Question 10**
----
--- Paste Question 10 here
+
+<img width="580" height="331" alt="image" src="https://github.com/user-attachments/assets/d8a85cba-50a4-4749-bf99-2438bd3590e9" />
 
 ```sql
--- Paste your SQL code below for Question 10
+DELETE FROM Doctors
+WHERE last_name IS NULL;
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="598" height="435" alt="image" src="https://github.com/user-attachments/assets/0b8c9e51-37e8-455c-ba3c-b991615f433a" />
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
